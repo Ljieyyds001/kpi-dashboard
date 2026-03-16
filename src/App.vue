@@ -123,12 +123,12 @@ function updateChart() {
       title: { text: '部门绩效对比', left: 'center', top: 8, textStyle: { color: '#7eb8e0', fontFamily: 'Rajdhani', fontSize: 15, fontWeight: 600 } },
       tooltip: { trigger: 'axis', backgroundColor: '#06142b', borderColor: '#0f3460', textStyle: { color: '#e8f4fd', fontFamily: 'Rajdhani', fontSize: 14 } },
       legend: { show: true, data: ['平均分', '最高分', '最低分'], top: 28, textStyle: { color: '#3d7aaa', fontSize: 12 }, itemWidth: 14, itemHeight: 9 },
-      grid: { left: 60, right: 30, top: 56, bottom: 28 },
+      grid: { left: 60, right: 30, top: 56, bottom: 50 },
       xAxis: {
         type: 'category',
         data: depts.map(d => d.name.replace('品质部', '\n品质部').replace('品质中心', '\n品质中心')),
         axisLine: { lineStyle: { color: '#0f3460' } },
-        axisLabel: { color: '#7eb8e0', fontSize: 12, fontFamily: 'Rajdhani', interval: 0 }
+        axisLabel: { color: '#7eb8e0', fontSize: 11, fontFamily: 'Rajdhani', interval: 0, lineHeight: 16 }
       },
       yAxis: { type: 'value', max: 90, splitLine: { lineStyle: { color: 'rgba(15,52,96,0.5)' } }, axisLine: { lineStyle: { color: '#0f3460' } }, axisLabel: { color: '#3d7aaa', fontSize: 12 } },
       series: [
